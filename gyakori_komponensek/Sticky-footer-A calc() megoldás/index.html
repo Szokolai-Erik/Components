@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!--1. a footer kivételével minden tartalmat csomagolj be egy konténerbe,
+2. a footernek adj egy fix magasságot, és
+3. számítsd ki a tartalom konténerének magasságát úgy, hogy a viewport teljes magasságából levonod a footer magasságát.-->
+<body>
+  <main class="content">
+    <span>content</span>
+  </main>
+  <footer class="footer">
+    <span>footer</span>
+  </footer>
+</body>
+</body>
+</html>
+<!--A calc() függvény ennek a módszernek a sarokköve. Használatával dinamikusan tudod számítani a .content magasságát úgy, hogy kivonod a footer magasságát a teljes viewport magasságából. Így a .content mindig le fogja tolni a footert a viewport legaljára.
+
+Ennek a módszernek ugyanaz a korlátja, mint az előzőnek: csak akkor működik, ha a footer magassága fix. Szintén nem kell emiatt aggódnod, csak tudj róla.-->
